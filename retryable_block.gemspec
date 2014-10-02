@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = RetryableBlock::VERSION
   spec.authors       = ["Steve Chung"]
   spec.email         = ["steve.chung7@gmail.com"]
-  spec.summary       = %q{Retry block if it returns errors.}
-  spec.description   = %q{A module that adds #retryable to your classes.}
-  spec.homepage      = ""
+  spec.summary       = %q{Method to retry block if it returns errors.}
+  spec.description   = %q{A module that adds `#retryable` to your classes, which retries blocks when an exception occurs.}
+  spec.homepage      = "https://github.com/s12chung/retryable_block"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

@@ -1,6 +1,6 @@
 # RetryableBlock [![Build Status](https://travis-ci.org/s12chung/retryable_block.svg?branch=master)](https://travis-ci.org/s12chung/retryable_block)
 
-A module that adds `#retryable` to your classes.
+A module that adds `#retryable` to your classes, which retries blocks when an exception occurs.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Include `RetryableBlock` to your class and use `retryable(n=3, sleep_time=nil, &block)`
 
 ## Contributing
 
