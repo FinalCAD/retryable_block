@@ -1,4 +1,4 @@
-# RetryableBlock
+# RetryableBlock [![Build Status](https://travis-ci.org/s12chung/retryable_block.svg?branch=master)](https://travis-ci.org/s12chung/retryable_block)
 
 A module that adds `#retryable` to your classes.
 
