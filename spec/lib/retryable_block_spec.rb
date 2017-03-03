@@ -21,6 +21,7 @@ class RetryableTest
     include Run
   end
 end
+
 shared_examples 'tests' do
   it "should retry n times" do
     n = 4

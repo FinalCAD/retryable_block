@@ -1,4 +1,14 @@
-# RetryableBlock [![Build Status](https://travis-ci.org/s12chung/retryable_block.svg?branch=master)](https://travis-ci.org/s12chung/retryable_block)
+# RetryableBlock
+
+[![Gem Version](https://badge.fury.io/rb/retryable_block.svg)](http://badge.fury.io/rb/retryable_block)
+
+[![Code Climate](https://codeclimate.com/github/FinalCAD/retryable_block.png)](https://codeclimate.com/github/FinalCAD/retryable_block)
+
+[![Dependency Status](https://gemnasium.com/FinalCAD/retryable_block.png)](https://gemnasium.com/FinalCAD/retryable_block)
+
+[![Build Status](https://travis-ci.org/FinalCAD/retryable_block.png?branch=master)](https://travis-ci.org/FinalCAD/retryable_block) (Travis CI)
+
+[![Coverage Status](https://coveralls.io/repos/github/FinalCAD/retryable_block/badge.svg?branch=master)](https://coveralls.io/github/FinalCAD/retryable_block?branch=master)
 
 A module that adds `#retryable` to your classes, which retries blocks when an exception occurs.
 

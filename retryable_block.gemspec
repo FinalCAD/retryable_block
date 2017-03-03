@@ -6,8 +6,8 @@ require 'retryable_block/version'
 Gem::Specification.new do |spec|
   spec.name          = "retryable_block"
   spec.version       = RetryableBlock::VERSION
-  spec.authors       = ["Steve Chung"]
-  spec.email         = ["steve.chung7@gmail.com"]
+  spec.authors       = ["Steve Chung", "Joel Azemar"]
+  spec.email         = ["steve.chung7@gmail.com", "joel.azemar@gmail.com"]
   spec.summary       = %q{Method to retry block if it returns errors.}
   spec.description   = %q{A module that adds `#retryable` to your classes, which retries blocks when an exception occurs.}
   spec.homepage      = "https://github.com/s12chung/retryable_block"
