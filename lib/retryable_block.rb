@@ -5,24 +5,22 @@ module RetryableBlock
     base.extend ClassMethods
   end
 
-  def retryable(n=3, sleep_time=nil, &block)
-    self.class.retryable(n, sleep_time, &block)
+  def retryable(n=3, sleep_time=nil, exceptions = [], &block)
+    exceptions << StandardError if exceptions.blank?
+    self.class.retryable(n, sleep_time, exceptions, &block)
   end
 
   module ClassMethods
-    def retryable(n=3, sleep_time=nil)
+    def retryable(n=3, sleep_time=nil, exceptions = [])
       tries = 0
       begin
         yield
-      rescue
-        if (tries+=1) <= n
-          if sleep_time
-            sleep sleep_time
-          end
+      rescue *exceptions
+        if (tries += 1) <= n
+          sleep sleep_time if sleep_time
           retry
-        else
-          raise
         end
+        raise
       end
     end
   end
