@@ -30,7 +30,11 @@ Or install it yourself as:
 
 ## Usage
 
-Include `RetryableBlock` to your class and use `retryable(n=3, sleep_time=nil, &block)`
+Include `RetryableBlock` to your class and use `retryable(n=3, sleep_time=nil, exceptions = [StandardError], &block)`
+
+`n=3` means 3 retries
+`sleep_time` number of seconds for sleep between retries, if `nil` retry will be call immediately.
+`exceptions` list of exceptions for retries, you can pass list of exceptions classes, as default value it will use `rescue StandardError`
 
 ## Contributing
 
